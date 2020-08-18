@@ -21,7 +21,7 @@
                 
                 <%if user_signed_in?%>
 
-                  <li><a href="#" ><i class="fa fa-heart"></i><span>My Account</span></a></li>
+                  <%=link_to "My Account" , myaccount_path%>
                   <li><%= button_to "logout", destroy_user_session_path, method: :delete  %> </li>
                               
                 <%else%>

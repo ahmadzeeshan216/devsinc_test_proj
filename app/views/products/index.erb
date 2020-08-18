@@ -1,0 +1,41 @@
+
+
+<div class="container">
+  <ul class="breadcrumb">
+    
+    <li><a href="category.html">My Products</a></li>
+  </ul>
+  <div class="row">
+    
+    <div id="content" class="">
+      
+      <% @products.each do |p| %>
+      
+        <div class="product-layout product-list col-xs-3">
+          <div class="product-thumb">
+            <div class="image product-imageblock"> <a href="product.html"> <img src="image/product/pro-3-220x294.jpg" alt="lorem ippsum dolor dummy" title=<%= p.name%> class="img-responsive" /> </a>
+              <div class="button-group">
+                <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+                <button type="button" class="addtocart-btn">Add to Cart</button>
+                <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product"><i class="fa fa-exchange"></i></button>
+              </div>
+            </div>
+            <div class="caption product-detail">
+              <h4 class="product-name"> <a href="product.html" title="lorem ippsum dolor dummy"> <%= p.name%> </a> </h4>
+              <p class="product-desc"> <%= p.description%></p>
+              <p class="price product-price"><span class="price-old">$272.00</span> $122.00 <span class="price-tax">Ex Tax: $100.00</span> </p>
+              <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+            </div>
+            <div class="button-group">
+              <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List"><i class="fa fa-heart-o"></i></button>
+              <button type="button" class="addtocart-btn">Add to Cart</button>
+              <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product"><i class="fa fa-exchange"></i></button>
+            </div>
+           </div>
+        </div>
+     <%end%> 
+      
+      </div>
+    </div>
+  </div>
+</div>

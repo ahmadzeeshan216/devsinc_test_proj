@@ -1,0 +1,148 @@
+<div class="container">
+ 
+  <div class="row">
+    
+    <div id="content" class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="thumbnails">
+            <div><a class="thumbnail" href="image/product/product8.jpg" title="lorem ippsum dolor dummy"><img src="image/product/product1.jpg"  alt="lorem ippsum dolor dummy" /></a></div>
+            <div id="product-thumbnail" class="owl-carousel">
+              <div class="item">
+                <div class="image-additional"><a class="thumbnail  " href="image/product/product1.jpg" title="lorem ippsum dolor dummy"> <img src="image/product/pro-1-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
+              </div>
+              <div class="item">
+                <div class="image-additional"><a class="thumbnail  " href="image/product/product2.jpg" title="lorem ippsum dolor dummy"> <img src="image/product/pro-2-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
+              </div>
+              <div class="item">
+                <div class="image-additional"><a class="thumbnail  " href="image/product/product3.jpg" title="lorem ippsum dolor dummy"> <img src="image/product/pro-3-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
+              </div>
+              <div class="item">
+                <div class="image-additional"><a class="thumbnail  " href="image/product/product4.jpg" title="lorem ippsum dolor dummy"> <img src="image/product/pro-4-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
+              </div>
+              <div class="item">
+                <div class="image-additional"><a class="thumbnail  " href="image/product/product5.jpg" title="lorem ippsum dolor dummy"> <img src="image/product/pro-5-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
+              </div>
+              <div class="item">
+                <div class="image-additional"><a class="thumbnail  " href="image/product/product6.jpg" title="lorem ippsum dolor dummy"> <img src="image/product/pro-6-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
+              </div>
+              <div class="item">
+                <div class="image-additional"><a class="thumbnail  " href="image/product/product7.jpg" title="lorem ippsum dolor dummy"> <img src="image/product/pro-7-220x294.jpg" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" /></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h1 class="productpage-title"><%= @product.name%></h1>
+          <hr>
+          <ul class="list-unstyled productinfo-details-top">
+            
+            <li><span class="productinfo-tax">Price: <%= @product.price%> Rs</span></>
+            <hr>
+            <li><span class="productinfo-tax">Available Quantity: <%= @product.quantity%> </span></>
+            <hr>
+            <li><span class="productinfo-tax">Serial Number: <%= @product.serial_number%> </span></>
+          </ul>
+          <hr>
+          
+          
+          <div id="product">
+            <div class="form-group">
+              <label class="control-label qty-label" for="input-quantity">Qty</label>
+              <input type="text" name="quantity" value="1" size="2" id="input-quantity" class="form-control productpage-qty" />
+              <input type="hidden" name="product_id" value="48" />
+              <div class="btn-group">
+                <button type="button" data-toggle="tooltip" class="btn btn-default wishlist" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                <button type="button" id="button-cart" data-loading-text="Loading..." class="btn btn-primary btn-lg btn-block addtocart">Add to Cart</button>
+                <button type="button" data-toggle="tooltip" class="btn btn-default compare" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        
+        
+      
+      
+    
+
+
+
+    <div id="content" class="col-sm-12">
+
+            <ul class="breadcrumb">
+                <li><a>Description</a></li>
+            </ul>
+
+            <div class="tab-content">
+            
+            <div class="tab-pane active" id="tab-description">
+                <div class="cpt_product_description ">
+                <div>
+                    <p><%= @product.description %></p>
+                </div>
+                </div>
+                
+            </div>
+            </div>
+
+    </div>
+
+
+    <div id="content" class="col-sm-12">
+
+            <ul class="breadcrumb">
+                <li><a>Reviews</a></li>
+            </ul>
+
+            <div class="tab-content">
+            
+            <div class="tab-pane active" id="tab-description">
+                <div class="cpt_product_description ">
+                <div>
+                    <p> <strong>More room to move.</strong></p>
+                    <p> With 80GB or 160GB of storage and up to 40 hours of battery life, the new lorem ippsum dolor dummy lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.</p>
+                    <p> <strong>Cover Flow.</strong></p>
+                    <p> Browse through your music collection by flipping through album art. Select an album to turn it over and see the track list.</p>
+                    <p> <strong>Enhanced interface.</strong></p>
+                    <p> Experience a whole new way to browse and view your music and video.</p>
+                    <p> <strong>Sleeker design.</strong></p>
+                    <p> Beautiful, durable, and sleeker than ever, lorem ippsum dolor dummy now features an anodized aluminum and polished stainless steel enclosure with rounded edges.</p>
+                </div>
+                </div>
+                
+            </div>
+            </div>
+
+    </div>
+
+    <div id="content" class="col-sm-12">
+        <form class="form-horizontal">
+              <div id="review"></div>
+              <h2>Write a review</h2>
+              <div class="form-group required">
+                <div class="col-sm-12">
+                  <label class="control-label" for="input-name">Your Name</label>
+                  <input type="text" name="name" value="" id="input-name" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group required">
+                <div class="col-sm-12">
+                  <label class="control-label" for="input-review">Your Review</label>
+                  <textarea name="text" rows="5" id="input-review" class="form-control"></textarea>
+                  <div class="help-block"><span class="text-danger">Note:</span> HTML is not translated!</div>
+                </div>
+              </div>
+              
+              <div class="buttons clearfix">
+                <div class="pull-right">
+                  <button type="button" id="button-review" data-loading-text="Loading..." class="btn btn-primary">Continue</button>
+                </div>
+              </div>
+        </form>
+    </div>
+
+
+  </div>
+</div>

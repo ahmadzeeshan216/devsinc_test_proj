@@ -1,0 +1,23 @@
+<div class="container">
+  <ul class="breadcrumb">
+    <li><a href="index-2.html"><i class="fa fa-home"></i></a></li>
+    <li><a href="login.html">My Account</a></li>
+  </ul>
+  <div class="row">
+    <div id="column-left" class="col-sm-3 hidden-xs column-left">
+      <div class="column-block">
+        <div class="columnblock-title">Account Options</div>
+        <div class="affiliate-block">
+          <div class="list-group"> 
+            
+            <%=link_to "Add Product", new_product_path, class: "list-group-item"%>
+            <%=link_to "My Products", products_path, class: "list-group-item"%>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content" class="col-sm-6">
+      
+    </div>
+  </div>
+</div>
